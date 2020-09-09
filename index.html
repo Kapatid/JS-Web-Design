@@ -18,10 +18,10 @@
 </head>
 
 <body>
-  <!-- Bootstrap -->
-  <script type="text/javascript" src="js/vendor/bootstrap/bootstrap.min.js"></script>
   <!-- JQuery -->
-  <script type="text/javascript" src="js/vendor/node_modules/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jsquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script type="text/javascript" src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
 
   <script type="text/javascript" src="js/custom/mainFunctions.js"></script>
 
@@ -29,20 +29,43 @@
   <div id="nav-placeholder"></div> -->
 
 
-  <div class="container">
+  <div class="container center">
     <div class="row">
       
       <div class="col-md-3"> 
-        <div class="col1"> col 1 </div>  
+        <div class="col1"> 
+          col 1 
+          <div class="col1" style="min-height: 40px;"> 
+            <input type="button" class="btn btn-primary" value="submit">
+          </div> 
+        </div>  
       </div>
+
       <div class="col-md-6"> 
-        <div class="col2"> col 2 </div>  
+        <div class="col2"> 
+          col 2 
+          <div class="col2" style="min-height: 40px;"> 
+            
+          </div> 
+        </div>  
       </div>
+
       <div class="col-md-3"> 
         <div class="col3"> col 3 </div>  
       </div>
-      
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
     </div>
+
   </div>
 
 
