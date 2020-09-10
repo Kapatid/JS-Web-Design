@@ -11,64 +11,87 @@
   <meta name="author" content="Nadji Tan">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/custom/mainStyles.css">
-</head>
-
-<body>
   <!-- JQuery -->
   <script type="text/javascript" src="js/vendor/jsquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <script type="text/javascript" src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
-
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="css/custom/mainStyles.css">
   <script type="text/javascript" src="js/custom/mainFunctions.js"></script>
+</head>
 
+<body>
   <!-- Navigation bar -->
-  <div id="nav-placeholder"></div>
-
-  <div class="container main-body">
-    <div class="row">
-      
-      <div class="col-md-3"> 
-        <div class="col1"> 
-          col 1 
-          <div class="col1" style="min-height: 40px;"> 
-            <input type="button" class="btn btn-primary" value="submit">
-          </div> 
-        </div>  
-      </div>
-
-      <div class="col-md-6"> 
-        <div class="col2"> 
-          col 2 
-          <div class="col2" style="min-height: 40px;"> 
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown button
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </div>
-          </div> 
-        </div>  
-      </div>
-
-      <div class="col-md-3"> 
-        <div class="col3"> col 3 </div>  
-      </div>
-
+  <!-- <div id="nav-placeholder"></div> -->
+  <nav class="navbar p-4 sticky-top navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand ml-xl-5" href="#" style="margin-right: 75%;">Brand</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu dropdown-menu-xl-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
     </div>
+  </nav>
+  <!-- End Of Navigation bar -->
+
+  <!-- Main Body -->
+  <div class="main-body">
 
   </div>
-
+  <!-- End of Main Body -->
 
   <!-- Footer -->
-  <div id="footer-placeholder"></div> 
+  <!-- <div id="footer-placeholder"></div> -->
+  <footer class="card text-center border-0 rounded-0 bg-primary">
+    <div class="card-body text-white">
+      <div class="container mx-auto">
+        <div class="row">
+          <div class="col-md-3 col-auto text-left" id="footer-items"> 
+            <h5 class="card-title">about</h5>  
+            <a class="card-link" href="#">about us</a><br>
+            <a class="card-link" href="#">privacy policy</a><br>
+            <a class="card-link" href="#">terms of service</a>
+          </div>
+
+          <div class="col-md-3 col-auto text-left" id="footer-items"> 
+            <h5 class="card-title">help</h5>
+            <a class="card-link" href="#">help center</a><br>
+            <a class="card-link" href="#">get started</a><br>
+            <a class="card-link" href="#">contact us</a>
+          </div>
+
+          <div class="col-md-3 col-auto text-left" id="footer-items"> 
+            <h5 class="card-title text-uppercase">connect</h5><br>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    <div class="card-footer text-white rounded-0 bg-primary">
+      © 2020 Nadji Tan
+    </div>
+  </footer>
+  <!-- End Of Footer -->
 </body>
 
 </html>
