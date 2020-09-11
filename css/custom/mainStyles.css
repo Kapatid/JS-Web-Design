@@ -37,7 +37,7 @@ img {
     text-align: center;
     background-color: silver;
 }
-  
+
 #footer-items h5, a{
     color:white;
 }
@@ -48,4 +48,12 @@ img {
 
 #footer-items a{
     text-transform:capitalize;
+}
+
+#footer-items a{
+    padding: 0rem;
+}
+
+#footer-items a > img{
+    width: 2rem;
 }

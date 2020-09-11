@@ -12,10 +12,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- JQuery -->
-  <script type="text/javascript" src="js/vendor/jsquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-  <script type="text/javascript" src="js/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Popper -->
+  <script type="text/javascript" src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+  <!-- Tippy -->
+  <link rel="stylesheet" href="node_modules/tippy.js/animations/shift-away.css">
+  <script type="text/javascript" src="node_modules/tippy.js/dist/tippy-bundle.umd.min.js"></script>
   <!-- Custom CSS & JS -->
   <link rel="stylesheet" href="css/custom/mainStyles.css">
   <script type="text/javascript" src="js/custom/mainFunctions.js"></script>
@@ -64,8 +69,8 @@
   <!-- <div id="footer-placeholder"></div> -->
   <footer class="card text-center border-0 rounded-0 bg-primary">
     <div class="card-body text-white">
-      <div class="container mx-auto">
-        <div class="row">
+      <div class="container">
+        <div class="row justify-content-center">
           <div class="col-md-3 col-auto text-left" id="footer-items"> 
             <h5 class="card-title">about</h5>  
             <a class="card-link" href="#">about us</a><br>
@@ -81,7 +86,22 @@
           </div>
 
           <div class="col-md-3 col-auto text-left" id="footer-items"> 
-            <h5 class="card-title text-uppercase">connect</h5><br>
+            <h5 class="card-title text-uppercase">connect</h5>
+            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My LinkedIn">
+              <img src="./img/socialMedia/linkedin-PNG.png" style="width: 2.3rem;" alt="LinkedIn Logo">
+            </a>
+            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My Facebook">
+              <img src="./img/socialMedia/f_logo_RGB-White_72.png" alt="Facebook Logo">
+            </a>
+            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My Twitter">
+              <img src="./img/socialMedia/Twitter_Social_Icon_Circle_White.png" alt="Twitter Logo">
+            </a>
+            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My Instagram">
+              <img src="./img/socialMedia/IG-PNG.png" alt="Instagram Logo">
+            </a>
+            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My GitHub">
+              <img src="./img/socialMedia/GitHub-Mark-Light-64px.png" alt="GitHub Logo">
+            </a>
           </div>
         </div>
       </div>
