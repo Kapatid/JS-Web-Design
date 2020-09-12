@@ -1,0 +1,142 @@
+$theme-colors: (
+    "primary": #2c6e49,
+    "secondary": #4c956c
+);
+
+@import "fonts";
+
+/* Bootstrap SCSS */
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+/* Custom SCSS */
+body {
+    background-color: #fefee3;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(../../img/home/nessi-gileva-Kqudzkzlksc-unsplash.jpg);
+    background-blend-mode: darken;
+    font-family: "Archivo", sans-serif;
+
+    .main-body {
+        height: 100vh;
+        .container.container-first {
+            padding-top: 100px;
+            width:fit-content;
+            margin-right: 50%;
+        }
+        h5 {
+            @extend 
+                .text-white,
+                .p-3, 
+                .bg-primary;
+            width:fit-content;
+            box-shadow: 0px 3px 4px rgb(0, 0, 0);
+            font-size: 2.15rem;
+        }
+    }
+}
+
+nav {
+    transition: background-color 0.4s ease-out;
+    .navbar-brand {
+        color: white;
+        font-size: xx-large;
+        font-weight: bold;
+        img{
+            width: 80px;
+        }
+    }
+    .nav-link {
+        color: white;
+        font-size: 1.15rem;
+    }
+    .nav-link.active{
+        font-weight: bold;
+    }
+    .nav-link:hover, .nav-link:focus {
+        font-weight: bold;
+    }
+    .navbar-toggler{
+        @extend .navbar-light;
+        border: black;
+    }
+    .dropdown-menu {
+        @extend .bg-primary;
+        .dropdown-item {
+            color: white;
+        }
+        .dropdown-item:hover {
+            font-weight: bold;
+            color: var(--primary);
+        }
+    }
+}
+
+nav.scrolled {
+    box-shadow: 0px 3px 4px rgb(0, 0, 0);
+    background-color: var(--primary);
+    @extend .navbar-dark;
+    .dropdown-menu {
+        @extend .bg-white;
+        .dropdown-item {
+            color: var(--primary);
+        }
+        .dropdown-item:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+footer {
+    @extend
+        .card,
+        .text-center,
+        .border-0,
+        .rounded-0 ,
+        .bg-primary;
+    
+    h5, a{
+        color:white;
+    }
+
+    h5{
+        text-transform:uppercase;
+        font-weight: bold;
+    }
+
+    a{
+        text-transform:capitalize;
+        padding: 0rem;
+        
+    }
+
+    a:hover{
+        color: white;
+        font-weight: bold;
+    }
+
+    #footerRowItems {
+        @extend
+            .col-md-3, 
+            .col-auto, 
+            .text-left,
+            .p-1;
+        #socialMediaBtn {
+            @extend 
+                .btn,
+                .m-0,
+                .p-0;
+        }
+        img{
+            width: 2rem;
+        }
+    }
+}
+
+
+
+
+
+
+
+

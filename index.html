@@ -22,84 +22,90 @@
   <link rel="stylesheet" href="node_modules/tippy.js/animations/shift-away.css">
   <script type="text/javascript" src="node_modules/tippy.js/dist/tippy-bundle.umd.min.js"></script>
   <!-- Custom CSS & JS -->
-  <link rel="stylesheet" href="css/custom/mainStyles.css">
   <script type="text/javascript" src="js/custom/mainFunctions.js"></script>
+  <link rel="stylesheet" href="css/custom/mainStyles.css">
+  
 </head>
 
 <body>
   <!-- Navigation bar -->
   <!-- <div id="nav-placeholder"></div> -->
-  <nav class="navbar p-4 sticky-top navbar-expand-lg navbar-dark bg-primary">
-    <a class="navbar-brand ml-xl-5" href="#" style="margin-right: 75%;">Brand</a>
+  <nav class="navbar p-4 pl-5 pr-5 sticky-top navbar-expand-lg navbar-right">
+    <a class="navbar-brand" href="#BRAND_LOGO"><img src="img/home/vectorstock_23639604.png" alt="Leaf Logo"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
     </button>
     
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+    <div class="collapse navbar-collapse ml-2" id="navbarSupportedContent">
+      <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#HOME">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#PRODUCTS">Products</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown
-          </a>
-          <div class="dropdown-menu dropdown-menu-xl-right" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Account</a>
+          <ul class="dropdown-menu dropdown-menu-xl-right" style="width: 200px;" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#ACCOUNT_SETTINGS">Account Settings</a></li>
+            <li><a class="dropdown-item" href="#SUPPORT">Support</a></li>
+            <li class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#LOG_OUT">Log out</a></li>
+          </ul>
         </li>
       </ul>
     </div>
   </nav>
   <!-- End Of Navigation bar -->
-
+  
   <!-- Main Body -->
   <div class="main-body">
+    <div class="container container-first">
+        <div class="col">
+          <h5>Want some plants?</h5>
+          <h5>Buy some in our store NOW.</h5>
+        </div>
 
+      </div>
+    </div>
   </div>
   <!-- End of Main Body -->
 
   <!-- Footer -->
   <!-- <div id="footer-placeholder"></div> -->
-  <footer class="card text-center border-0 rounded-0 bg-primary">
+  <footer>
     <div class="card-body text-white">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-3 col-auto text-left" id="footer-items"> 
+          <div id="footerRowItems"> 
             <h5 class="card-title">about</h5>  
-            <a class="card-link" href="#">about us</a><br>
-            <a class="card-link" href="#">privacy policy</a><br>
-            <a class="card-link" href="#">terms of service</a>
+            <a class="card-link" href="#ABOUT_US">about us</a><br>
+            <a class="card-link" href="#PRIVACY_POLICY">privacy policy</a><br>
+            <a class="card-link" href="#TERMS_OF_SERVICE">terms of service</a>
           </div>
 
-          <div class="col-md-3 col-auto text-left" id="footer-items"> 
+          <div id="footerRowItems"> 
             <h5 class="card-title">help</h5>
-            <a class="card-link" href="#">help center</a><br>
-            <a class="card-link" href="#">get started</a><br>
-            <a class="card-link" href="#">contact us</a>
+            <a class="card-link" href="#HELP_CENTER">help center</a><br>
+            <a class="card-link" href="#GET_STARTED">get started</a><br>
+            <a class="card-link" href="#CONTACT_US">contact us</a>
           </div>
 
-          <div class="col-md-3 col-auto text-left" id="footer-items"> 
+          <div id="footerRowItems"> 
             <h5 class="card-title text-uppercase">connect</h5>
-            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My LinkedIn">
+            <a id="socialMediaBtn" data-tippy-content="My LinkedIn">
               <img src="./img/socialMedia/linkedin-PNG.png" style="width: 2.3rem;" alt="LinkedIn Logo">
             </a>
-            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My Facebook">
+            <a id="socialMediaBtn" data-tippy-content="My Facebook">
               <img src="./img/socialMedia/f_logo_RGB-White_72.png" alt="Facebook Logo">
             </a>
-            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My Twitter">
+            <a id="socialMediaBtn" data-tippy-content="My Twitter">
               <img src="./img/socialMedia/Twitter_Social_Icon_Circle_White.png" alt="Twitter Logo">
             </a>
-            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My Instagram">
+            <a id="socialMediaBtn" data-tippy-content="My Instagram">
               <img src="./img/socialMedia/IG-PNG.png" alt="Instagram Logo">
             </a>
-            <a class="btn" href="#" id="socialMediaBtn" data-tippy-content="My GitHub">
+            <a id="socialMediaBtn" data-tippy-content="My GitHub">
               <img src="./img/socialMedia/GitHub-Mark-Light-64px.png" alt="GitHub Logo">
             </a>
           </div>
