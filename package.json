@@ -1,0 +1,25 @@
+{
+  "name": "js-web-design",
+  "version": "1.0.0",
+  "description": "Website for a course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kapatid/JS-Web-Design.git"
+  },
+  "author": "Nadji Tan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kapatid/JS-Web-Design/issues"
+  },
+  "homepage": "https://github.com/Kapatid/JS-Web-Design#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.4.4",
+    "bootstrap": "^4.5.2",
+    "jquery": "^3.5.1",
+    "tippy.js": "^6.2.6"
+  }
+}
